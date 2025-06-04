@@ -23,11 +23,15 @@ public class GatewaySecurityConfig {
                                 "/api/productos",
                                 "/api/categorias",
                                 "/api/usuarios",
+                                "api/usuarios/**",
+                                "/api/roles",
                                 "/api/roles/**",
+                                "/api/permissions",
                                 "/api/permissions/**",
                                 "/api/userroles",
                                 "/api/userroles/**",
-                                "/api/rolespermisos"
+                                "/api/rolespermisos",
+                                "/api/rolespermisos/**"
 
 
 
