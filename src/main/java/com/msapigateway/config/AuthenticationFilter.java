@@ -23,14 +23,21 @@ public class AuthenticationFilter implements GlobalFilter, Ordered {
     private static final String SECRET_KEY = "MiClaveSecretaSuperLargaYSeguraQueTieneAlMenos512BitsDeLongitud";
 
     private static final List<String> PUBLIC_PATHS = List.of(
-            "/api/usuarios/login",
+            "/api/auth/login",
+            "/api/auth/refresh",
+            "/api/productos/tarjetas",
+            "/api/categorias/listar",
+            "/api/productos/detalles",
             "/api/usuarios/register",
             "/api/usuarios/generate-otp",  // 👈 Asegúrate de que esta esté aquí
             "/api/usuarios/verificar-otp",
             "/api/usuarios/otp-tiempo-restante",
             "/api/usuarios/reenviar-otp",
-            "/api/productos",
-            "/api/categorias"
+            "/api/combinaciones/stock/**"
+
+
+
+
 
 
     );
